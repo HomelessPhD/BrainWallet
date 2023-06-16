@@ -71,6 +71,7 @@ To go this way, the Electrum should be installed. The way to that shown below (j
 there for instrunctions):
 
 ***Install dependencies***
+
 ```sudo apt-get install python3-pyqt5 libsecp256k1-dev python3-cryptography```
 
 ***Install electrum through Python:***
