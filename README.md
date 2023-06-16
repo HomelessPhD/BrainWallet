@@ -19,13 +19,13 @@ part could be solved in different ways in general:
 
 The brute scripts rely on the Python, and so below a short instruction for Ubuntu how to prepare it to run the script:
 
-    Install python and all required:
+***Install python and all required:***
 ```    
 sudo apt-get update
 sudo apt install python3 python3-pip
 ```
 
-    Add support for "old" hashing into hashlib (OpenSSL):
+***Add support for "old" hashing into hashlib (OpenSSL):***
 ```
 To quickly enable it, find the directory that holds your OpenSSL config file or a symlink to it, by running the below command:
 
@@ -53,7 +53,7 @@ activate = 1
 activate = 1
 ```
 
-    Install all required packaged ("hashlib" and  "codecs" are usually default modules\libs, but "ecdsa" - not, so install it):
+***Install all required packaged ("hashlib" and  "codecs" are usually default modules\libs, but "ecdsa" - not, so install it):***
 ```pip install ecdsa```
 
 ## The WEB way
@@ -69,10 +69,10 @@ placed in file "found.txt".
 To go this way, the Electrum should be installed. The way to that shown below (just taken from official Electrum site - you could follow 
 there for instrunctions):
 
-    Install dependencies
+***Install dependencies***
 ```sudo apt-get install python3-pyqt5 libsecp256k1-dev python3-cryptography```
 
-    Install electrum through Python:
+***Install electrum through Python:***
 ```
 wget https://download.electrum.org/4.4.4/Electrum-4.4.4.tar.gz
 
