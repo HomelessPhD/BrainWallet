@@ -53,7 +53,7 @@ activate = 1
 activate = 1
 ```
 
-***Install all required packaged ("hashlib" and  "codecs" are usually default modules\libs, but "ecdsa" - not, so install it):***
+***Install all required packages ("hashlib" and  "codecs" are usually default modules\libs, but "ecdsa" - not, so install it):***
 
 ```pip install ecdsa```
 
