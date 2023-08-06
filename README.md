@@ -87,6 +87,11 @@ The script works nearly the same way - run "Brute_electrum.py" from the folder "
 and the results are stored in "found.txt"
 ```python3 Brute_electrum.py```
 
+## The Hash Table  - brute in Python
+(This is the fastest described here way)
+   To go this way, the BTC balances database should be downloaded and placed in the same folder where "1_revert_to_hash.py" and "2_brute_passphrases.py" located . When the database file downloaded (and, if needed, unpacked - from tar.gz to *.txt file) - correct the filename in scrypt "1_revert_to_hash.py".
+
+Run the "1_revert_to_hash.py" to prepare the database of RIPEMD160 hashes (P2PKH addresses). Now you can and "2_brute_passphrases.py" after that to run the bruteforce
 
 Any ideas\questions or propositions you may send to generalizatorSUB@gmail.com.
 
