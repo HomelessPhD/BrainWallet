@@ -89,7 +89,7 @@ and the results are stored in "found.txt"
 
 ## The Hash Table  - brute in Python
 (This is the fastest described here way)
-   To go this way, the BTC balances database should be downloaded (Here you could download the database (it is tared - untar to use [[1]](https://t.me/Blockchain_BTC_ETH_DUMPS), and here where it was taken [1']) and placed in the same folder where "1_revert_to_hash.py" and "2_brute_passphrases.py" located . When the database file downloaded (and, if needed, unpacked - from tar.gz to *.txt file) - correct the filename in scrypt "1_revert_to_hash.py".
+   To go this way, the BTC balances database should be downloaded (Here you could download the database (it is tared - untar to use [[1]], and here where it was taken [[1']](https://t.me/Blockchain_BTC_ETH_DUMPS)) and placed in the same folder where "1_revert_to_hash.py" and "2_brute_passphrases.py" located . When the database file downloaded (and, if needed, unpacked - from tar.gz to *.txt file) - correct the filename in scrypt "1_revert_to_hash.py".
 
 Run the "1_revert_to_hash.py" to prepare the database of RIPEMD160 hashes (P2PKH addresses). 
 
@@ -108,7 +108,8 @@ Thank you for spending time on my notes, i hope it was not totally useless and y
 -------------------------------------------------------------------------
 ### References:
 [1] - 
-[1'] Telegram channek with fresh BTC addresses:balances databases - https://t.me/Blockchain_BTC_ETH_DUMPS
+
+[1'] Telegram channel with fresh BTC addresses:balances databases - https://t.me/Blockchain_BTC_ETH_DUMPS
 
 -------------------------------------------------------------------------
 ### Support
