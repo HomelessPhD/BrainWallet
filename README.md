@@ -91,7 +91,14 @@ and the results are stored in "found.txt"
 (This is the fastest described here way)
    To go this way, the BTC balances database should be downloaded and placed in the same folder where "1_revert_to_hash.py" and "2_brute_passphrases.py" located . When the database file downloaded (and, if needed, unpacked - from tar.gz to *.txt file) - correct the filename in scrypt "1_revert_to_hash.py".
 
-Run the "1_revert_to_hash.py" to prepare the database of RIPEMD160 hashes (P2PKH addresses). Now you can and "2_brute_passphrases.py" after that to run the bruteforce
+Run the "1_revert_to_hash.py" to prepare the database of RIPEMD160 hashes (P2PKH addresses). 
+
+   Finally, you are ready to run the bruteforce - "2_brute_passphrases.py". 
+This script will read the RIPEMD160 database (*.txt file that the "1_revert_to_hash.py" script prepared), compose the Hash Table upon that (dictionary) and loop over each passphrase from "pass_list.txt" verifying its "balance" through composed hashtable (actually it checks not the balance but if balance is non-zero - simple scripts modification could allow to check the balances values). 
+
+This is the fastest way to check whether the balance of the private key (appropriate address) is positive or not: without multitrading, on a single core, 1 check in python requires less than E-06 s on my 9700k CPU system. BUT, the transformation of PASSPHRASE to the RIPEMD160 hash is much slower, ~ E-03 s (per compressed + un-compressed address) on my 9700k CPU system and so the final final speed will be limited now by this heavy elyptic curve + hashing operations (in cotrast to previous solutions where the speed were limited by balance check)
+
+This idea could be improved by utilizing multitrading - running a few instances of the same script (2nd script - with different pass_list.txt) OR slightly modifying the 2nd script to run itself on a few threads.
 
 Any ideas\questions or propositions you may send to generalizatorSUB@gmail.com.
 
