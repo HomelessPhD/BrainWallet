@@ -114,9 +114,7 @@ Thank you for spending time on my notes, i hope it was not totally useless and y
 -------------------------------------------------------------------------
 ### Support
 I am poor Ukrainian student that will really appreciate any donations.
-I have no home (flat\appartment), live in the dorm trying to accumulate funds
-for the smallest flat in the city - with no success at the moment,
-have nearly 10% of needed amount.
+Successfully evacuated from occupied regions of Ukraine.
  
 P.S. Successfully evacuated from occupied regions of Ukraine.
 
